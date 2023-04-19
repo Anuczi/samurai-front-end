@@ -1,1 +1,1 @@
-"# samurai-front-end" 
+# samurai-front-end
