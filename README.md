@@ -1,1 +1,0 @@
-# samurai-front-end
