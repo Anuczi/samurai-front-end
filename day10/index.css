@@ -67,6 +67,8 @@ nav {
 
 nav ul {
     list-style: none;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 nav ul li {
@@ -99,6 +101,8 @@ nav ul li a:hover {
 
 div.blog {
     margin-top: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 main {
@@ -136,9 +140,25 @@ section.contact ul {
     list-style: none;
 }
 
+section.contact li {
+    margin: 10px 0;
+}
+
+section.contact li i {
+    margin-right: 20px;
+    color: #333;
+}
+
 section.contact p {
     margin-bottom: 24px;
     font-weight: bold;
+}
+
+section.news {
+    margin-top: 30px;
+    height: 300px;
+    background-color: #ddd;
+    padding: 15px;
 }
 
 footer {
