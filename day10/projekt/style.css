@@ -30,6 +30,7 @@ nav ul {
 
 nav ul li {
     float: left;
+
     
 }
 
@@ -37,9 +38,10 @@ nav ul li a {
     line-height: 70px;
     display: block;
     padding: 0 40px;
-    border-right: 2px solid black;
     color: #bbb;
     font-size: 18px;
+    border-right: 2px solid black;
+
     letter-spacing: 1px;
     font-family: "roboto";
     text-decoration: none;
