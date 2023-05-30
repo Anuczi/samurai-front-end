@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div .board {
+        position: relative;
+        margin-top: 50px;
+        margin-left: 50px;
+        height: 400px;
+        width: 400px;
+        border: 4px solid black;
+      }
+
+      .board span {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        background-color: red;
+      }
+
+      .board span:first-child {
+        top: 0;
+        left: 0;
+      }
+
+      .board span:last-child {
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="board">
+      <span></span>
+      <span></span>
+    </div>
+  </body>
+</html>
