@@ -1,0 +1,241 @@
+/*    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Saira', sans-serif;
+
+    font-family: 'Saira Condensed', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    position: relative;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #29a6dc;
+    overflow: hidden;
+
+}
+
+header > * {
+    position: absolute;
+}
+
+header img {
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+header div.welcome {
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    font-family: 'saira condensed' , sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+
+header h1 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header button {
+    line-height: 30px;
+    padding: 0 20px;
+    font-family: 'saira' , sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    font-size: 12px;
+    border: 2px solid white;
+}
+
+@media (orientation:portrait) and (min-width: 360px) {
+    header h1 {
+        font-size: 24px;
+    }
+    header h2 {
+        font-size: 24px;
+    }
+    header button {
+        line-height: 40px;
+        font-size: 16px;
+        margin-top: 40px;
+    }
+}
+
+@media (orientation: landscape) {
+    header img {
+        height: 80%;
+        bottom: 0;
+        right: 0;
+    }
+    header div.welcome {
+        top: 15%;
+        left: 5%;
+        right: 50%;
+    }
+    header button {
+        margin-top: 50px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header h1 {
+        font-size: 28px;
+    }
+    header h2 {
+        font-size: 28px;
+    }
+    header button {
+        margin-top: 20px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header img {
+        right: -20%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1080px) {
+    header div.welcome {
+        left: 3%;
+    }
+    header p {
+        font-size: 56px;
+    }
+    header h1 {
+        margin-top: 40px;
+        font-size: 38px;
+    }
+    header h2 {
+        font-size: 38px;
+    }
+    header button {
+        margin-top: 80px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    header img {
+        height: 80%;
+        right: -18%;
+        
+    }
+}
+
+@media (orientation:portrait) and (min-width: 810px) {
+    header p {
+        font-size: 40px;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    header h2 {
+        font-size: 40px;
+    }
+    header button {
+        line-height: 40px;
+        font-size: 16px;
+        margin-top: 100px;
+    }
+    header img {
+        right: 10%;
+    }
+}
+
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    header div.welcome {
+    text-align: left; 
+    left: 6%;   
+    }
+    header p {
+        font-size: 100px;
+    }
+    header h1 {
+        margin-top: 40px;
+        font-size: 50px;
+    }
+    header h2 {
+        font-size: 50px;
+    }
+    header button {
+        margin-top: 100px;
+        font-size: 38px;
+        line-height: 80px;
+        padding: 0 40px;
+    }
+    header img {
+        right: -15%;
+        height: 93%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+   
+    header p {
+        font-size: 120px;
+    }
+    header h1 {
+        margin-top: 40px;
+        font-size: 60px;
+    }
+    header h2 {
+        font-size: 60px;
+    }
+    header button {
+        margin-top: 100px;
+        font-size: 38px;
+        line-height: 90px;
+        padding: 0 40px;
+    }
+    header img {
+        right: 0%;
+        height: 90%;
+    }
+
+}
+
+@media (min-width:1024px) {
+    header button {
+        cursor: pointer;
+        transition: .3s;
+    }
+    header button:hover {
+        background-color: #fff;
+        color: #111;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    min-height: 100vh;
+}
