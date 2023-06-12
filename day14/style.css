@@ -10,6 +10,12 @@
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 
 
 header {
@@ -235,7 +241,246 @@ header button {
 
 
 
-
 section {
-    min-height: 100vh;
+    min-height: 30vh;
+}
+
+
+.features {
+    max-width: 1600px;
+    margin: 50px auto 0;
+    padding: 5%;
+    text-align: center;
+}
+
+.features h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size:  26px;
+    text-transform: uppercase;
+}
+
+.features h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size:  22px;
+    text-transform: uppercase
+}
+
+.features p {
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.features img {
+    width: 100%;
+    margin: 5px 0;
+    max-width: 375px;
+}
+
+@media (min-width: 360px) {
+    .features p {
+        font-size: 14px;
+    }
+
+    .features h1 {
+        font-size: 28px;
+    }
+
+    .features h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .features p {
+        font-size: 18px;
+    }
+
+    .features h1 {
+        font-size: 36px;
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+
+    .features {
+        margin-top: 50px;
+        padding: 5% 2%;
+        text-align: center;
+    }
+
+    .features p {
+        font-size: 16px;
+        line-height: 120%;
+        padding: 0 10px;
+    }
+
+    .features h1 {
+        font-size: 36px;
+    }
+
+    .features h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .feature {
+        padding: 20px 50px;
+    }
+
+
+    .features p {
+        font-size: 21px;
+        line-height: 140%;
+        padding: 0 10px;
+    }
+
+    .features h1 {
+        font-size: 60px;
+    }
+
+    .features h2 {
+        font-size: 32px;
+
+    }
+}
+
+.portfolio {
+    background-color: #000;
+    padding: 10px 0 30px ;
+}
+
+.portfolio h1 {
+
+    font-size: 28px ;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.portfolio .web img {
+    width: 100%;
+}
+
+.portfolio .about {
+    color: white;
+    font-family: 'Saira', sans-serif;
+    font-weight: normal;
+    padding: 10px 20px 20px 0;
+    text-align: left;
+}
+
+.portfolio .about h2 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    text-indent: 20px;
+    text-transform: uppercase;
+}
+
+.portfolio .about p {
+    font-size: 12px;
+    padding-left: 20px;
+
+}
+
+.portfolio .project {
+    max-width: 1400px;
+    margin: 0 auto 20px;
+
+}
+
+.portfolio .project:nth-of-type(odd) {
+    background-color: orangered;
+}
+
+.portfolio .project:nth-of-type(even) {
+    background-color: deepskyblue;
+}
+
+@media (min-width:768px)  {
+
+    .portfolio h1 {
+      font-size: 40px;
+    }
+  
+    .portfolio .about h2 {
+      font-size: 28px;
+      text-indent: 40px;
+    }
+  
+    .portfolio .about p {
+      font-size: 18px;
+      padding-left: 40px;
+    }
+  
+    .portfolio .project {
+      margin-bottom: 40px;
+    }
+}
+@media (orientation: landscape) {
+    .web, .about {
+        width: 50%;
+        float: left;
+    }
+
+    .web img {
+        display: block;
+    }
+
+    .portfolio .project:nth-of-type(even) .web {
+        float: right;
+    }
+}
+
+@media (orientation:landscape) and (min-width: 1400px) {
+    .portfolio h1 {
+        font-size: 60px;
+        padding-top: 40px;
+      }
+    
+      .portfolio .about h2 {
+        padding-top: 50px;
+        margin-bottom: 40px;
+        font-size: 28px;
+        text-indent: 40px;
+      }
+    
+      .portfolio .about p {
+        font-size: 18px;
+        padding-left: 40px;
+        line-height: 180%;
+      }
+    
+      .portfolio .project {
+        margin-bottom: 40px;
+      }
+}
+
+.portfolio .project:nth-of-type(even) .about {
+    padding-right:0;
+}
+
+.portfolio .project:nth-of-type(even) .about p {
+    padding-right: 20px;
+}
+
+.portfolio .project:nth-of-type(even) .about h2 {
+    text-indent: 0;
+    margin-left: 40px;
 }
