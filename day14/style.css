@@ -241,7 +241,7 @@ header button {
 
 
 
-section {
+footer {
     min-height: 30vh;
 }
 
@@ -484,3 +484,94 @@ section {
     text-indent: 0;
     margin-left: 40px;
 }
+
+/*sekcja slogan*/
+
+.slogan {
+    text-align: center;
+    background-image: url(images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-attachment:fixed;
+}
+
+.slogan h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size:  26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.slogan p {
+    font-family: 'Saira', sans-serif;
+}
+
+.slogan p.author {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.slogan .bg {
+    background-color: rgba(0, 63, 114, .5);
+    padding: 30px 10px;
+
+}
+
+@media (orientation: landscape) {
+    .slogan p {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:768px) {
+    .slogan .bg {
+        padding: 50px 10px;
+    
+    }
+    .slogan h1 {
+    
+        font-size:  38px;
+        margin-bottom: 35px;
+    }
+    
+    .slogan p {
+        width: 60%;
+        font-size: 26px;
+        margin: 0 auto;
+
+    }
+    
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1024px) {
+    .slogan .bg {
+        padding: 80px 10px;
+    
+    }
+    .slogan h1 {
+    
+        font-size:  60px;
+        margin-bottom: 55px;
+    }
+    
+    .slogan p {
+        width: 50%;
+        font-size: 40px;
+        margin: 0 auto;
+
+    }
+    
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 26px;
+    }
+}
+
+
