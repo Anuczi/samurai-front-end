@@ -574,4 +574,68 @@ footer {
     }
 }
 
+/*sekcja hobby*/
+
+.hobby .item {
+    height: 25vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url(images/hobby1.jpg);
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url(images/hobby2.jpg);
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url(images/hobby3.jpg);
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url(images/hobby4.jpg);
+}
+
+.hobby .item p {
+    font-family: 'Saira', sans-serif;
+    color: white;
+    text-align: center;
+    /* line-height: 25vh; */
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.hobby  h1 {
+    padding: 20px;
+    font-family: 'Saira condensed' sans-serif;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 533px) {
+    
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .hobby h1 {
+    font-size:  48px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    }
+
+    .hobby .item p {
+        font-size: 30px;
+        padding: 15px 0;
+    }
+}
 
