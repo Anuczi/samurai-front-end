@@ -576,6 +576,11 @@ footer {
 
 /*sekcja hobby*/
 
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;;
+}
+
 .hobby .item {
     height: 25vh;
     background-position: center;
@@ -637,5 +642,99 @@ footer {
         font-size: 30px;
         padding: 15px 0;
     }
+}
+
+@media (min-width: 1024px) {
+    .hobby .item p {
+        padding: 0;
+        line-height: 40vh;
+        opacity: 0;
+        transition: 1s;
+        cursor: default;
+    }
+
+    .hobby .item:hover p {
+        opacity: 1;
+    }
+
+    .hobby .item {
+        background-size: 100%;
+        transition: 3s;
+    }
+
+    .hobby .item:hover {
+        background-size: 130%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hobby h1 {
+    font-size:  60px;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    }
+
+    .hobby .item p {
+        font-size: 40px;
+    }
+
+}
+
+/* sekcja kontakt */
+
+.contact {
+    background-color: black;
+    padding: 30px 20px;
+}
+
+.contact h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size:  26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+
+}
+
+.contact .wrap {
+    padding: 20px;
+}
+
+.contact input, .contact button, .contact textarea  {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+}
+
+.contact input {
+    height: 36px;
+    padding: 5px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    line-height: 40px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.contact .socials {
+    padding-top: 30px;
+}
+
+.contact .social {
+    padding-top: 10px;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.socials span {
+    
 }
 
